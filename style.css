@@ -1,0 +1,77 @@
+/* page styling */
+body {
+background-color: white;
+color: #404040;
+font-size: 11pt;
+font-family: Georgia, Garamond, serif;
+margin: 0;
+padding: 0;
+}
+
+/* main headings */
+h1 {
+color: #A4A400;
+font-size: 22pt;
+font-weight: bold;
+text-decoration: underline;
+}
+
+/* sub headings */
+h2,
+h3 {
+color: #A4A400;
+font-size: 18pt;
+font-weight: normal;
+text-decoration: underline;
+}
+
+
+/* header */
+header {
+text-align: center;
+padding: 25px;
+}
+
+/* navigation */
+nav {
+text-align: center;
+padding: 15px;
+}
+
+nav a {
+color: #A4A400;
+font-weight: bold;
+}
+
+/* main content */
+main {
+max-width: 900px;
+margin: 0 auto;
+padding: 20px;
+}
+
+section {
+margin-bottom: 30px;
+}
+
+/* lists */
+ul,
+ol {
+line-height: 1.6;
+}
+
+/* links */
+a {
+color: #A4A400;
+}
+
+a {
+color: #404040;
+}
+
+/* footer */
+footer {
+text-align: center;
+margin-top: 40px;
+padding: 20px;
+}
