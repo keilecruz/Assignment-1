@@ -6,6 +6,8 @@ font-size: 11pt;
 font-family: Georgia, Garamond, serif;
 margin: 0;
 padding: 0;
+text-align: center;
+
 }
 
 /* main headings */
@@ -32,6 +34,13 @@ text-align: center;
 padding: 25px;
 }
 
+/* header images */
+header img{
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+}
+
 /* navigation */
 nav {
 text-align: center;
@@ -41,6 +50,7 @@ padding: 15px;
 nav a {
 color: #A4A400;
 font-weight: bold;
+margin: 0 10px;
 }
 
 /* main content */
@@ -48,16 +58,34 @@ main {
 max-width: 900px;
 margin: 0 auto;
 padding: 20px;
+text-align: center;
 }
 
 section {
 margin-bottom: 30px;
 }
 
+/* images */
+main img{
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+}
+
 /* lists */
 ul,
 ol {
 line-height: 1.6;
+display: inline-block;
+text-align: left;
+}
+
+/* option 3 : Custom Star List Marker */
+section ul{
+    list-style-image: url(images/star-event.jpg);
+    display: inline-block;
+    text-align: left;
+    line-height: 1.6;
 }
 
 /* links */
@@ -68,6 +96,44 @@ color: #A4A400;
 a {
 color: #404040;
 }
+
+/* Feature 1 : Attendee testimonial */
+blockquote{
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 15px;
+    background-color: #FFFFA8;
+    font-style: italic;
+
+}
+
+/* option 4 : tooltips */
+
+ol li {
+    position: relative;
+    cursor: help;
+}
+
+ol li:hover::after {
+    content: attr(title);
+    position: absolute;
+    left: 50%;
+    bottom: 100%;
+    transform: translateX(-50%);
+
+    width: 250px;
+    padding: 10px;
+
+    background-color: #404040;
+    color: white;
+    text-align: center;
+    font-size: 10pt;
+    line-height: 1.4;
+
+    border-radius: 5px;
+    z-index: 10;
+}
+
 
 /* footer */
 footer {
